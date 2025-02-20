@@ -100,11 +100,27 @@ button {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
 }
+.current {
+  color: #404bbf;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
 .header-address {
   font-style: normal;
   margin-left: auto;
@@ -137,6 +153,16 @@ button {
   background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 700;
@@ -187,6 +213,21 @@ button {
 .advantages-item {
   width: calc((100% - 72px) / 4);
 }
+
+.advantages-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+.adv-item-icon {
+}
+
 .advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -226,6 +267,8 @@ button {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-list-img {
   display: block;
