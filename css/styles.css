@@ -446,14 +446,18 @@ button {
 }
 
 .footer-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-footer-container {
+  margin-right: 120px;
 }
 
 .social-footer-container {
-  display: flex;
+  display: inline-block;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-text-icon {
