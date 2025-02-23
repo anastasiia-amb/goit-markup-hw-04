@@ -382,8 +382,8 @@ button {
   opacity: 0;
 }
 
-.portfolio-block:hover .overlay {
-  transform: translateX(0);
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0%);
   opacity: 1;
 }
 
